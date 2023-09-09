@@ -55,6 +55,7 @@ passport.deserializeUser(User.deserializeUser())
 
 // Flash messages middleware
 app.use((req, res, next) => {
+    res.locals.currentUser = req.user; // All templates have access to current logged in user
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     next();
