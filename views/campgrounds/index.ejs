@@ -5,7 +5,11 @@
     <div class="card">
         <civ class="row">
             <div class="col-md-4">
+                <% if(camp.images.length) { %>
                 <img class="img-fluid" src="<%= camp.images[0].url %>" alt="">
+                <% } else {%>
+                    <img src="https://res.cloudinary.com/de58ttsxq/image/upload/v1696209054/YelpCamp/o74svx6ckup7rynydbag.jpg" alt="">
+                <% } %>
             </div>
             <div class="col-md-8">
                 <div class="card-body">
