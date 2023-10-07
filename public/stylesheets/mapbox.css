@@ -19,7 +19,7 @@
     margin-top: -15px;
   }
   
-  .mapboxgl-popup-content p {
+  .mapboxgl-popup-content p, a {
     margin: 0;
     padding: 5px 10px;
     font-weight: 400;
