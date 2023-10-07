@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+}
+
+main video {
+    width: 45vw;
+    height: auto;
+    border-radius: 10px;
+}
