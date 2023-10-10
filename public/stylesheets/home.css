@@ -1,9 +1,60 @@
 body {
     height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://source.unsplash.com/featured/?camping");
+    background-size: cover;
+    background-position: center;
 }
 
 main video {
     width: 45vw;
     height: auto;
     border-radius: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+
+.nav-link:hover {
+    color: white;
+}
+
+nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(30, 144, 255);
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+    font-weight: bolder;
+  }
+  
+nav a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+.nav-link.active{
+    color: white;
+}
+
+main .btn {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease;
+}
+
+main .btn:hover {
+    color: white;
 }
