@@ -8,9 +8,16 @@
   <civ class="row">
     <div class="col-md-4">
       <% if(camp.images.length) { %>
-      <img class="img-fluid h-100" src="<%= camp.images[0].url %>" alt="" />
+      <img
+        crossorigin="anonymous"
+        class="img-fluid h-100"
+        src="<%= camp.images[0].url %>"
+        alt=""
+      />
       <% } else {%>
       <img
+        class="img fluid h-100"
+        crossorigin="anonymous"
         src="https://res.cloudinary.com/de58ttsxq/image/upload/v1696209054/YelpCamp/o74svx6ckup7rynydbag.jpg"
         alt=""
       />
