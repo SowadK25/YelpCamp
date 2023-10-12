@@ -22,7 +22,7 @@ const helmet = require("helmet");
 const userRoutes = require("./routes/users");
 const campgroundRoutes = require("./routes/campgrounds");
 const reviewRoutes = require("./routes/reviews");
-const dbURL = "mongodb://127.0.0.1:27017/yelp-camp"; //process.env.DB_URL;
+const dbURL = process.env.DB_URL;
 
 mongoose.connect(dbURL);
 
