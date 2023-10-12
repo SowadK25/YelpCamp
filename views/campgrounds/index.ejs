@@ -4,13 +4,19 @@
 <h1>All Campgrounds</h1>
 <div><a href="/campgrounds/new">Add Campground</a></div>
 <% for (let camp of campgrounds) { %>
-<div class="card mb-3">
+<div
+  class="card mb-3 lozad"
+  style="
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+  "
+>
   <civ class="row">
     <div class="col-md-4">
       <% if(camp.images.length) { %>
       <img
         crossorigin="anonymous"
-        class="img-fluid h-100"
+        class="img-fluid h-100 w-100"
         src="<%= camp.images[0].url %>"
         alt=""
       />
@@ -44,3 +50,4 @@
 </script>
 
 <script src="/scripts/clusterMap.js"></script>
+<script src="/scripts/lazyload.js"></script>

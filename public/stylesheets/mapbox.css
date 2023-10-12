@@ -36,3 +36,9 @@
   .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
     border-bottom-color: #91c949;
   }
+
+  .responsive {
+    max-height: 25rem;
+    min-height: 25rem;
+    object-fit: cover;
+  }
